@@ -1,0 +1,13 @@
+[
+  { "id": "1", "name": "Автомобили", "icon": "car-side" },
+  { "id": "2", "name": "Камиони", "icon": "truck" },
+  { "id": "3", "name": "Автобуси", "icon": "bus" },
+  { "id": "4", "name": "Мотори", "icon": "motorcycle" },
+  { "id": "5", "name": "Приколки", "icon": "caravan" },
+  { "id": "6", "name": "Трејлери", "icon": "shuttle-van" },
+  { "id": "7", "name": "Индустриски возила", "icon": "snowplow" },
+  { "id": "8", "name": "Велосипеди", "icon": "bicycle" },
+  { "id": "9", "name": "Делови", "icon": "cogs" },
+  { "id": "10", "name": "Гуми и Бандажи", "icon": "tire-logo logo" },
+  { "id": "11", "name": "Услуги", "icon": "tools" }
+]

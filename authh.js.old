@@ -1,0 +1,49 @@
+import Vuex from "vuex";
+
+const create = {
+  namespaced: false,
+  state: {
+    token: null
+  },
+
+  mutations: {
+    updateToken(state, token) {
+      state.token = token;
+    }
+  },
+
+  getters: {},
+  actions: {
+    async login(context, payload) {
+      try {
+        const response = await this.$axios.post(
+          "https://avtomarket.azurewebsites.net/api/user/login",
+          {
+            username: payload.username,
+            password: payload.password
+          }
+        );
+        console.log(response);
+        context.commit("updateToken", response.data);
+      } catch (err) {
+        debugger;
+        console.log(err.response);
+      }
+
+      //commit("updateToken", response);
+    }
+
+    // async login(context, payload)  {
+    //   const response = await this.$axios.$post("/api/user/login", {
+    //     email: payload.email,
+    //     password: payload.password
+    //   });
+
+    //   console.log(response);
+    //   debugger;
+
+    // context.commit('updateToken', response.data)
+  }
+};
+
+export default create;
